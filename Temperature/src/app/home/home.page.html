@@ -1,0 +1,12 @@
+<ion-content [fullscreen]="true">
+  <div class="contentMain">
+    <h1>Leitor de temperaturas</h1>
+    <input [(ngModel)]="inputTemperature" type="number" placeholder="Digite uma temperatura...">
+    <select [(ngModel)]="optionTemperature" class="selectOptionTemperature">
+      <option value="Fahrenheit">Fahrenheit</option>
+      <option value="Celsius">Celsius</option>
+    </select>
+    <button (click)="calcularTemperature()">Calcular</button>
+    <label>{{resTemperature}}</label>
+  </div>
+</ion-content>

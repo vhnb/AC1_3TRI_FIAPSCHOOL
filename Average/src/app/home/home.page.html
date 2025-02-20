@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+  <div class="contentMain">
+    <h1>Leitor de temperaturas</h1>
+    <input [(ngModel)]="inputGradeOne" type="number" placeholder="Primeira nota">
+    <input [(ngModel)]="inputGradeTwo" type="number" placeholder="Segunda nota">
+    <input [(ngModel)]="inputGradeThree" type="number" placeholder="Terceira nota">
+    <input [(ngModel)]="inputGradeFour" type="number" placeholder="Quarta nota">
+    <button (click)="calcAverage()">Calcular média</button>
+    <label>{{resAverage}}</label>
+  </div>
+</ion-content>
