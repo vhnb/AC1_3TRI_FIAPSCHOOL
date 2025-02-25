@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -24,7 +24,7 @@ export class HomePage {
       this.resTriangle = 'Preencha os lados.'
       return
     }
-    if (sideA + sideB > sideC) {
+    if (sideA + sideB > sideC && sideB + sideC > sideA && sideA + sideC > sideB) {
       if (sideA === sideB && sideA === sideC) {
         this.resTriangle = 'É um triângulo Equilátero'
       } else if (sideA !== sideB && sideA !== sideC) {
