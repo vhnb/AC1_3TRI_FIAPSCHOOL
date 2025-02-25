@@ -14,7 +14,7 @@ export class HomePage {
   inputTemperature: any = ''
   resTemperature: any = ''
 
-  calcularTemperature() {
+  calcTemperature() {
     if (this.inputTemperature === '') {
       this.resTemperature = 'Digite uma temperatura'
     } else {
